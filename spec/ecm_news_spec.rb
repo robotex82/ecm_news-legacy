@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe EcmNews do
+describe Ecm::News do
   it "should be valid" do
-    EcmNews.should be_a(Module)
+    Ecm::News.should be_a(Module)
   end
 end

@@ -1,6 +1,6 @@
 module Ecm
   module News
-    class Enine < Rails::Engine
+    class Engine < Rails::Engine
       config.to_prepare do
         ApplicationController.helper(Ecm::NewsHelper)
       end  

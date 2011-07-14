@@ -1,4 +1,4 @@
-class Ecm::Frontend::NewsController < ApplicationController
+class Ecm::Frontend::NewsController < Ecm::FrontendController
   unloadable
 
   def index
