@@ -11,3 +11,7 @@ gem "rspec-rails", ">= 2.0.0.beta"
 # gem 'ruby-debug19'
 
 gem 'ecm_frontend', :git => 'git://github.com/robotex82/ecm_frontend.git'
+
+group :test do
+  gem 'factory_girl_rails'
+end
