@@ -1,0 +1,27 @@
+<h1>Listing news</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body length</th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @news.each do |news| %>
+  <tr>
+    <td><%= link_to news.title, [:ecm, :news, :frontend, news] %></td>
+    <td><%= news_item.body.length %></td>
+
+    <td><%= link_to 'Show', [:ecm, :news, :frontend, news_item] %></td>
+    <td><%= link_to 'Edit', edit_ecm_news_frontend_news_path(news) %></td>
+    <td><%= link_to 'Destroy', [:ecm, :news, :frontend, news], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Back', "/" %>
