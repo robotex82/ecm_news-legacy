@@ -6,5 +6,5 @@ Gem::Specification.new do |s|
   s.summary = "ECM News module. provides news functionality"
   s.description = "ECM News module. provides news functionality"
   s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 end
