@@ -6,8 +6,6 @@
     <th>Body length</th>
 
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @news.each do |news| %>
@@ -16,8 +14,6 @@
     <td><%= news.body_length %></td>
 
     <td><%= link_to 'Show', news %></td>
-    <td><%= link_to 'Edit', edit_news_path(news) %></td>
-    <td><%= link_to 'Destroy', news, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
