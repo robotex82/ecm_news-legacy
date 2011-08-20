@@ -9,7 +9,7 @@ module Ecm::NewsHelper
   end
   
   def news_preview_box(position, count = 1)
-    return unless news_position = NewsPosition.find_by_identifier("left")
+    return unless news_position = NewsPosition.find_by_identifier(position)
     news = news_position.news.take(count)
     render :partial => "news/news_preview", :collection => @news, :as => :news
   end
