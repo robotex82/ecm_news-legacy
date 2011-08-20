@@ -4,7 +4,7 @@ class CreateNews < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.timestamp :publish_at
-
+      
       t.timestamps
     end
   end

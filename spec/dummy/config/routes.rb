@@ -1,4 +1,7 @@
 Dummy::Application.routes.draw do
+  get "/positions", :to => "home#positions"
+  get "/categorized", :to => "home#categorized"
+  root :to => "home#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

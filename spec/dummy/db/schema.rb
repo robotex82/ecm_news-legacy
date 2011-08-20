@@ -10,6 +10,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110820164802) do
+
+  create_table "news", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "publish_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "news_category_id"
+  end
+
+  create_table "news_categories", :force => true do |t|
+    t.string   "name"
+    t.string   "identifier"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "news_position_id"
+  end
+
+  create_table "news_positions", :force => true do |t|
+    t.string   "name"
+    t.string   "identifier"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

@@ -10,6 +10,7 @@ gem "rspec-rails", ">= 2.0.0.beta"
 # gem 'ruby-debug'
 # gem 'ruby-debug19'
 
+gem 'ecm_core', :git => 'git://github.com/robotex82/ecm_core.git'
 gem 'ecm_frontend', :git => 'git://github.com/robotex82/ecm_frontend.git'
 
 group :test do
