@@ -1,5 +1,6 @@
 class News < ActiveRecord::Base
   belongs_to :news_category
+  belongs_ro :news_position
   
   validates :title, :presence => true, :length => { :minimum => 5, :maximum => 255 }
   validates :body, :presence => true
